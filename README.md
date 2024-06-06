@@ -60,9 +60,9 @@ I started and finished this project in March 2023.
 
 ## Sources
 
-<a href="https://www.flaticon.com/free-icons/ship" title="ship icons">- Ship icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/damage" title="damage icons">- Damage icons created by Febrian Hidayat - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/cross" title="cross icons">- Cross icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/ship" title="ship icons">Ship icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/damage" title="damage icons">Damage icons created by Febrian Hidayat - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/cross" title="cross icons">Cross icons created by Freepik - Flaticon</a>
 - https://unsplash.com/photos/9oqEDetfT9M by Karl Groendal
 - https://fonts.google.com/specimen/Rubik+Iso
 - https://fonts.google.com/specimen/Stick+No+Bills
