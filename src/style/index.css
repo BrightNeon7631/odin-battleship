@@ -1,0 +1,274 @@
+@font-face {
+    font-family: rubik-iso;
+    src: url(/src/assets/fonts/RubikIso.ttf);
+} 
+
+@font-face {
+    font-family: stick-no-bills;
+    src: url(/src/assets/fonts/StickNoBills.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif, system-ui;
+}
+
+body {
+    margin: 0;
+    background-color: #edf4fb;
+}
+
+#top {
+    background-color: #4992d3;
+    height: 15vh;
+    font-family: rubik-iso;
+    font-weight: bold;
+    color: white;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+#ship-img {
+    max-width: 1000px;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    display: block;
+    border: 4px solid #0357a0;
+}
+
+#mid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#info {
+    align-self: center;
+    font-family: stick-no-bills;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+button {
+    width: 12rem;
+    align-self: center;
+    font-family: stick-no-bills;
+    font-size: 2rem;
+    background-color: #4992d3;
+    border: 3px solid #0357a0;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+#random-button, 
+#flip-button {
+    width: 8rem;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: #0357a0;
+    cursor: pointer;
+}
+
+#boards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.grid-name {
+    font-family: stick-no-bills;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: 15px solid #0357a0;
+    background-color: #0357a0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+    user-select: none;
+}
+
+.grid {
+    border-left: 15px solid #0357a0;
+    border-right: 15px solid #0357a0;
+    border-bottom: 15px solid #0357a0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.grid-row {
+    display: flex;
+}
+
+.grid-row-element {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #363636;
+}
+
+.playable:hover {
+    background-color: #4992d3;
+    cursor: crosshair;
+}
+
+.ship {
+    background-image: url(/src/assets/icons/boat.png);
+    background-size: 37px;
+}
+
+.miss {
+    background-color: #4992d3;
+}
+
+.hit {
+    background-color: rgb(216, 51, 51);
+    background-image: url(/src/assets/icons/damage.png);
+    background-size: 37px;
+}
+
+.sunk {
+    background-color: #0357a0;
+    background-image: url(/src/assets/icons/cancel.png);
+    background-size: 35px;
+}
+
+#results {
+    font-size: x-large;
+}
+
+.blocks-flex {
+    display: flex;
+    gap: 5px;
+}
+
+.block-container {
+    display: flex;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.block {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    background-color: #4992d3;
+    background-image: url(/src/assets/icons/boat.png);
+    background-size: 37px;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+
+.drag-over {
+    border: dashed 3px red;
+}
+
+.hide {
+    display: none;
+}
+
+#player-name-div {
+    width: 30rem;
+    height: 10vh;
+    align-self: center;
+    font-family: stick-no-bills;
+    font-size: 1rem;
+    background-color: #4992d3;
+    border: 3px solid #0357a0;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#player-name-input {
+    border-radius: 5px;
+    border: 1px solid #0357a0;
+    outline: none;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blocks {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 895px) {
+    #top {
+        font-size: 2.5rem;
+        height: 5rem;
+    }
+
+    #boards {
+      flex-direction: column;
+      margin-top: 1rem;
+      gap: 1rem;
+    }
+
+    .grid-name {
+        width: 370px;
+        border: 10px solid #0357a0;
+    }
+    
+    .grid {
+        border-left: 10px solid #0357a0;
+        border-right: 10px solid #0357a0;
+        border-bottom: 10px solid #0357a0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .grid-row-element {
+        height: 35px;
+        width: 35px;
+    }
+
+    .ship {
+        background-size: 32px;
+    }
+    
+    .hit {
+        background-size: 32px;
+    }
+    
+    .sunk {
+        background-size: 32px;
+    }
+
+    #blocks {
+        display: none;
+    }
+
+    #flip-button {
+        display: none;
+    }
+
+    #random-button {
+        margin-left: 15px;
+    }
+
+    #info {
+        margin: 0;
+    }
+}
