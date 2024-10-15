@@ -30,9 +30,7 @@ I started and finished this project in March 2023.
 
 ## Links
 
-[Live Demo](https://brightneon7631.github.io/odin-battleship/)
-
-[My Other Projects](https://brightneon7631.github.io/odin-scrimba-projects/)
+[Live Demo](https://bn7631-odin-battleship-game.pages.dev)
 
 ## Screenshots
 
@@ -71,7 +69,7 @@ I started and finished this project in March 2023.
 
 ```bash
 # clone repo
-git clone
+git clone https://github.com/BrightNeon7631/odin-battleship.git
 
 # install project dependencies
 npm install
